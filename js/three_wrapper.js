@@ -14,7 +14,7 @@ let material;
  */
 function setCanvas(canvasId){
     const canvasElement = document.getElementById(canvasId);
-    renderObject = new THREE.WebGLRenderer({ canvas:canvasElement });
+    renderObject = new THREE.WebGLRenderer({ canvas: canvasElement, antialias: true });
 }
 
 
@@ -114,6 +114,22 @@ function animate(now) {
 *   Running code
 */
 entryPoint();
+var loader = new THREE.GLTFLoader();
+loader.load('res/model.glb', function (gltf) {
+    
+    scene.add(gltf.scene);
+    var light = new THREE.PointLight(0xff0000, 1, 100);
+    light.position.set(50, 50, 50);
+    scene.add(light);
+ 
+    renderObject.render(scene, camera);
+    console.log("Added object successfully!!");
+}, undefined, function (error) {
+
+    console.error(error);
+
+});
+
 let particles = generateParticles(10000, 0.01, material);
 let last = 0; 
 animate(0);
