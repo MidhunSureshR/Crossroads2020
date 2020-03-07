@@ -1,3 +1,16 @@
+/*Load local font */
+@font-face {
+    font-family: "Hanson-Bold";
+    src: url("../../fonts/Hanson-Bold.ttf");
+}
+
+#roads-text{
+  margin-left:145px;
+  margin-top:10px;
+}
+#title_gap{
+  margin-top: -50px;
+}
 @import url("http://fonts.googleapis.com/css?family=Dosis:600|Roboto+Slab:100,300,400,700");
 article,
 aside,
@@ -236,7 +249,8 @@ p {
 
 em {
   font-style: normal;
-  color: #D92400; }
+  color: #D92400; 
+}
 
 img {
   display: block;
@@ -250,7 +264,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: #D92400; }
+  color: #D92400; 
+}
 
 button {
   -webkit-font-smoothing: antialiased;
@@ -677,7 +692,7 @@ footer {
 
 .title {
   font-size: 5.5em !important; 
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Hanson-Bold';
   text-shadow: 0 8px 6px rgba(0, 0, 0, 0.6);
   margin-top: -0.7em;
   position: absolute;
@@ -1104,6 +1119,12 @@ footer {
     transform: scale(0.5); }
 
 @media all and (min-width: 400px) {
+
+  #roads-text{
+    margin-left:45px;
+    margin-top:100px !important;
+  }
+
   html {
     font-size: 12px; }
 

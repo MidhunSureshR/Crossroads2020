@@ -76,7 +76,7 @@ header a, a:visited {
 }
 
 .stars {
-  background:#000 url(../../images/stars.png) repeat top center;
+  background:rgb(0, 0, 0) url(../../images/stars.png) repeat top center;
   z-index:0;
 }
 

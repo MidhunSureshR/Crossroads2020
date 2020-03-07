@@ -1,4 +1,4 @@
-
+console.log("W = " + $(window).width());
 // jQuery Selections
 var $html = $('html'),
     $container = $('#container'),
