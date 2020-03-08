@@ -1,0 +1,30 @@
+#carouselContainer{
+    background-color: #F2F2F2;
+    color:rgb(255, 255, 255);
+    width:100vw;
+    height: 70vh;
+}
+.crew-member-pic{
+ width: 200px;
+ height: 200px;
+ margin-left:20px;
+
+}
+
+.crew-member-name,.crew-member-designation{
+    font-family: 'Lato', sans-serif;
+    color:#404040;
+    font-size: 5vh;
+}
+
+.crew-member-designation{
+    font-size: 3vh;
+}
+.container-fluid{
+  
+    padding: 0px;;
+}
+
+.fab{
+    color:#404040;
+}
