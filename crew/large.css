@@ -1,0 +1,32 @@
+
+@media(min-width:992px){
+
+        .push-right{
+                margin-left:40vh;
+        }
+
+        .center-down-image{
+                margin-top: 100px;
+        }
+
+         .center-down-text{
+                margin-top: 110px;
+        }
+
+        .position-absolute-l{
+                position: absolute;
+        }
+
+        .font-size-title{
+                font-size: 10vh;
+        }
+
+        .font-size-desig{
+                font-size:5vh;
+        }
+
+        .font-size-icon{
+                font-size:25px;
+        }
+
+}

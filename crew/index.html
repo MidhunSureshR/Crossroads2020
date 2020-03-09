@@ -18,13 +18,20 @@
 
     <!--External CSS-->
     <link rel="stylesheet" href="style.css">
+
+    <!--External CSS for Animations-->
+    <link rel="stylesheet" href="animation.css">
+
+    <!--External CSS for large viewports-->
+    <link rel="stylesheet" href="large.css">
+
     <title>Hello, world!</title>
 </head>
 
 <body>
 <div class="container-fluid">
 
-    <div id="carouselContainer" class="carousel slide" data-ride="carousel">
+    <div id="carouselContainer" class="carousel slide" data-interval="false"> <!--data-ride="carousel" Stop autoplay-->
 
         <ol class="carousel-indicators">
             <li data-target="#carouselContainer" data-slide-to="0" class="active"></li>
@@ -37,43 +44,52 @@
             <div class="carousel-item active">
 
                 <div class="carousel-content">
-                        <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col">
-                                <img class="crew-member-pic " src="res/img/pic.png"/>
-                            </div>
-                        </div>
                       
+                    <div class="text-center text-lg-left push-right center-down-image pt-3 float-lg-left">
+                        <img class="crew-member-pic " src="res/img/pic.png"/>
+                    </div>
+                 
                         <div class="row">
-                            <div class="col">
-                                <div class="text-center crew-member-name">Pranav S. Varrier</div>
-                            </div>
+                        
+                                <div class="col">
+                                    <div class="float-lg-left center-down-text">
+                                        <div class="text-center crew-member-name font-size-title">Pranav S. Varrier</div>
+                                    </div>
+                                </div>
+                            
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <div class="text-center crew-member-designation">TECHNICAL HEAD</div>
+                                <div class="text-center text-lg-left crew-member-designation font-size-desig">TECHNICAL HEAD</div>
                             </div>
                         </div>
                         
-                        <div class="row pt-2">
-                            <div class="col">
-                                <div class="text-right bounce-left">
+                        <div class="row pt-3 font-size-icon">
+
+                            <div class="col col-lg">
+                                <div class="text-right text-lg-center bounce-left">
                                     <i class="fab fa-instagram-square"></i>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="text-center shake-horizontal">
+
+                            <div class="col col-lg">
+                                <div class="text-center text-lg-center shake-horizontal">
                                 <i class="fas fa-at"></i>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="text-left bounce-right">
+
+                            <div class="col col-lg">
+                                <div class="text-left text-lg-center bounce-right">
                                     <i class="fab fa-facebook-f"></i>
                                 </div>
                             </div>
+
+                            <div class="col-lg-9"></div>
+
                         </div>
-                    
+
+                 
                 </div>
 
             </div>
